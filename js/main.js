@@ -33,11 +33,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Cerrar menú al hacer clic en un enlace (en móvil)
-    const navLinks = document.querySelectorAll('.nav-list a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            if (window.innerWidth <= 768) {
+    // Cerrar menú al hacer clic fuera (solo móvil)
+    document.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768) {
+            const isClickInsideMenu = mainNav.contains(e.target);
+            const isClickOnToggle = menuToggle.contains(e.target);
+            
+            if (!isClickInsideMenu && !isClickOnToggle && mainNav.classList.contains('active')) {
                 mainNav.classList.remove('active');
                 menuToggle.setAttribute('aria-expanded', 'false');
                 
@@ -46,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     dropdown.classList.remove('active');
                 });
             }
-        });
+        }
     });
     
     // Actualizar año en el footer
