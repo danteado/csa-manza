@@ -1,0 +1,28 @@
+/csa-manza/
+├── index.html
+├── asamblea.html
+├── actividades.html
+├── css/
+│   └── styles.css          (¡NUEVO CSS UNIFICADO!)
+├── js/
+│   └── main.js
+├── img/
+│   ├── asamblea/
+│   │   └── organigrama.jpg
+│   ├── novedades/
+│   │   ├── programacion-noviembre-1.jpg
+│   │   ├── programacion-noviembre-2.jpg
+│   │   ├── programacion-diciembre-1.jpg
+│   │   └── programacion-diciembre-2.jpg
+│   └── actividades/
+│       ├── recurrentes/
+│       │   ├── cineforum.jpg
+│       │   ├── jam-session.jpg
+│       │   └── ...
+│       └── puntuales/
+│           ├── rastro-solidario.jpg
+│           └── ...
+├── actividades/
+│   ├── recurrentes.html
+│   └── puntuales.html
+└── (sin contacto.html ni páginas innecesarias)

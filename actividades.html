@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades - CSA MANZA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="brand">
+                <div class="site-title">
+                    <h1>CSA MANZA</h1>
+                    <p class="tagline">Centro Social Autogestionado de Manzanares el Real</p>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">NOVEDADES</a></li>
+                    <li class="dropdown">
+                        <a href="asamblea.html" class="dropbtn">ASAMBLEA<i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="asamblea/quienes-somos.html">¿Quiénes somos?</a></li>
+                            <li><a href="asamblea/organigrama.html">Organigrama</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="actividades.html" class="dropbtn active">ACTIVIDADES <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="actividades/recurrentes.html">Recurrentes</a></li>
+                            <li><a href="actividades/puntuales.html">Puntuales</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Abrir menú de navegación">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h1>ACTIVIDADES</h1>
+                <p>Para todas las edades e intereses, creadas y gestionadas por la comunidad.</p>
+            </div>
+        </section>
+
+        <section class="activities-main">
+            <div class="container">
+                <div class="activities-categories">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-redo-alt"></i>
+                        </div>
+                        <h2><a href="actividades/recurrentes.html">Actividades Recurrentes</a></h2>
+                        <p>Actividades que se realizan con periodicidad semanal o mensual.</p>
+                        <ul class="activity-list">
+                            <li>Cineforum</li>
+                            <li>Jam Session</li>
+                            <li>La gramola</li>
+                            <li>Pequeteca</li>
+                            <li>Trasteando</li>
+                            <li>Círculo de mantras</li>
+                            <li>Grupo de consumo</li>
+                        </ul>
+                        <a href="actividades/recurrentes.html" class="category-button">Ver todas</a>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h2><a href="actividades/puntuales.html">Actividades Puntuales</a></h2>
+                        <p>Eventos, talleres y actividades que se realizan en fechas concretas.</p>
+                        <ul class="activity-list">
+                            <li>Rastro solidario</li>
+                            <li>25N - Día contra la violencia de género</li>
+                            <li>Taller de podcast</li>
+                            <li>Asesoría sindical-laboral</li>
+                            <li>ReciclArte</li>
+                        </ul>
+                        <a href="actividades/puntuales.html" class="category-button">Ver todas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p><i class="fas fa-envelope"></i> csamanza@proton.me</p>
+        <p><i class="fas fa-map-marker-alt"></i> Calle Santa Teresa, 10</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
